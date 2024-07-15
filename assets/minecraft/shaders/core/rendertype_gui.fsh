@@ -11,6 +11,6 @@ void main() {
     if (color.a == 0.0) {
         discard;
     }
-    float gray = 0.21 * color.r + 0.71 * color.g + 0.07 * color.b;
-    fragColor = vec4(color.rgb * (1.0 - 1) + (gray * 1), color.a) * ColorModulator;
+    color.rgb = vec3(dot(color.rgb, vec3(0.299, 0.587, 0.114)));
+    fragColor = color * ColorModulator;
 }
