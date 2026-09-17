@@ -1,1 +1,1 @@
-{"pack":{"description":"Make Minecraft Black & White\n§cBy Ewan Howell","pack_format":34,"supported_formats":{"min_inclusive":16,"max_inclusive":34}}}
+{"pack":{"description":"Make Minecraft Black & White\n§cBy Ewan Howell","min_format":69,"max_format":97},"overlays":{"entries":[{"directory":"69-96","min_format":69,"max_format":96},{"directory":"69-87","min_format":69,"max_format":87},{"directory":"69-83","min_format":69,"max_format":83},{"directory":"69-74","min_format":69,"max_format":74}]}}

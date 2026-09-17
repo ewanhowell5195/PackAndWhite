@@ -6,7 +6,8 @@
 
 uniform sampler2D Sampler0;
 
-layout(location = 0) in vec2 texCoord0;
+layout(location = 0) in vec4 vertexColor;
+layout(location = 1) in vec2 texCoord0;
 
 layout(location = 0) out vec4 fragColor;
 
@@ -15,5 +16,5 @@ void main() {
     if (color.a == 0.0) {
         discard;
     }
-    fragColor = greyscale(color * ColorModulator);
+    fragColor = greyscale(vec4(ColorModulator.rgb * vertexColor.rgb, ColorModulator.a));
 }
